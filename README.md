@@ -11,6 +11,8 @@
 
 ## Day 2
 * [x] Refactoring and Code smell
+  * The Boy Scout Rule
+  * The Broken Windows
 * [x] Workshop with [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)
 * [x] Introduction to Inheritance and Interface
 * [x] Composition over Inheritance
