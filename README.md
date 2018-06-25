@@ -12,7 +12,7 @@
 * [x] Introduction to Inheritance and Interface
 * [x] Composition over Inheritance
 * [x] Introduction to use Git and Github
-* [x] Homework about Object-Oriented Design with Harry Potter
+* [x] Homework about Object-Oriented Design with [Harry Potter](https://github.com/up1/java_course_2018/wiki/Harry-Potter)
 
 ## Day 3
 
