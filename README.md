@@ -3,6 +3,9 @@
 ## Day 1
 * [x] Mistakes from Java Programmer/Developer
 * [x] Write unit tests with JUnit
+* [x] Basic of Java programming language
+  * IF-else statement
+  * Looping => For/For-each, while and do-while
 * [x] Using [Cyber-Dojo](http://www.cyber-dojo.org/) with Prime Factor
 * [x] Introduction to [Refactoring and Code smell](https://sourcemaking.com/refactoring/smells)
 
