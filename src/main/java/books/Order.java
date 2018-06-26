@@ -30,10 +30,13 @@ public class Order {
 
     public void process() {
         if(this.bookItem != null) {
+            // Book amount = size of order
             this.bookAmount = 1;
             
             // Calculate price
-            this.totalPrice = bookItem.getBook().getPrice();
+//            this.totalPrice = bookItem.getBook().getPrice();
+            // Law of demeter :: https://en.wikipedia.org/wiki/Law_of_Demeter
+            this.totalPrice = bookItem.getTotalPrice();
             
             // Calculate discount
             this.discount = 0;

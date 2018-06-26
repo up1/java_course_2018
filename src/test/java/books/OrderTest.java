@@ -17,9 +17,9 @@ public class OrderTest {
         order.process();
         
         assertEquals(1, order.getBookAmount());
-        assertEquals(8, order.getTotalPrice(), 2);
-        assertEquals(0, order.getDiscount(), 2);
-        assertEquals(8, order.getNetPrice(), 2);
+        assertEquals(8, order.getTotalPrice(), 0.00);
+        assertEquals(0, order.getDiscount(), 0.00);
+        assertEquals(8, order.getNetPrice(), 0.00);
     }
 
     @Test
@@ -27,9 +27,9 @@ public class OrderTest {
         Order order = new Order();
         order.process();
         assertEquals(0, order.getBookAmount());
-        assertEquals(0, order.getTotalPrice(), 2);
-        assertEquals(0, order.getDiscount(), 2);
-        assertEquals(0, order.getNetPrice(), 2);
+        assertEquals(0, order.getTotalPrice(), 0.00);
+        assertEquals(0, order.getDiscount(), 0.00);
+        assertEquals(0, order.getNetPrice(), 0.00);
     }
 
 }

@@ -12,8 +12,8 @@ public class BookItem {
         this.quantity = quantity;
     }
 
-    public Book getBook() {
-        return book;
+    public double getTotalPrice() {
+        return book.getPrice() * quantity;
     }
     
 
