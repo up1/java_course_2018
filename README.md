@@ -20,7 +20,13 @@
 * [x] Homework about Object-Oriented Design with [Harry Potter](https://github.com/up1/java_course_2018/wiki/Harry-Potter)
 
 ## Day 3
-
+* [ ] Review problem of [Harry Potter](https://github.com/up1/java_course_2018/wiki/Harry-Potter)
+* [ ] SOLID
+* [ ] Introduction to Java Collections Framework
+* [ ] Error handling
+  * [ ] Error handling in Java
+  * [ ] Working with JUnit
+* [ ] Introduction to Java 8
 
 ## Day 4
 
