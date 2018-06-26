@@ -60,4 +60,7 @@ public class Book {
             return false;
         return true;
     }
+    public double getPrice() {
+        return this.price;
+    }
 }
