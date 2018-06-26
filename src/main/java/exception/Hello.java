@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Hello {
     public static void main(String[] args) {
@@ -14,13 +16,26 @@ public class Hello {
     
     private void start() {
         // TODO
-        UserDatabase userDatabase = new UserDatabase();
+//        UserDatabase userDatabase = new UserDatabase();
+//        try {
+//            userDatabase.getName(1);
+//        } catch (UserNotFoundException | InternalInException | DatabaseProblemException e) {
+//            e.printStackTrace();
+//        }
         try {
-            userDatabase.getName(1);
-        } catch (UserNotFoundException | InternalInException | DatabaseProblemException e) {
-            e.printStackTrace();
+            div(1,0);
+        }catch(InputCantZeroValueException e){
+            System.out.println("Error");
         }
     }
+    
+    private double div(int a, int b){
+        if(b != 0) {
+            return a/b;
+        }
+        throw new InputCantZeroValueException();
+    }
+    
 }
 
 class UserDatabase {
