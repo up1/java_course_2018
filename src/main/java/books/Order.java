@@ -5,13 +5,12 @@ import java.util.List;
 
 public class Order {
 
-    private int bookAmount;
     private double totalPrice;
     private double discount;
     private double netPrice;
 
     public int getBookAmount() {
-        return this.bookAmount;
+        return this.bookItem.size(); 
     }
 
     public double getTotalPrice() {
@@ -32,17 +31,8 @@ public class Order {
     }
 
     public void process() {
-//        if(this.bookItem != null && this.bookItem.size() > 0) {
         if(!this.bookItem.isEmpty()) {
-            // Book amount = size of order
-            this.bookAmount = this.bookItem.size();
-            
-            // Calculate price
-//            this.totalPrice = bookItem.getBook().getPrice();
-            // Law of demeter :: https://en.wikipedia.org/wiki/Law_of_Demeter
-            for (BookItem book : bookItem) {
-                this.totalPrice += book.getTotalPrice();
-            }
+            calculateTotalPrice();
             
             // Calculate discount
             this.discount = 0;
@@ -52,6 +42,12 @@ public class Order {
             
             // Calculate net price
             this.netPrice = getTotalPrice() - getDiscount();
+        }
+    }
+
+    private void calculateTotalPrice() {
+        for (BookItem book : bookItem) {
+            this.totalPrice += book.getTotalPrice();
         }
     }
 
