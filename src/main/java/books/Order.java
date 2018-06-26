@@ -35,13 +35,20 @@ public class Order {
             calculateTotalPrice();
             
             // Calculate discount
-            this.discount = 0;
-            if(getBookAmount() == 2) {
-                this.discount = getTotalPrice() * 0.05;
-            }
+            calculateDiscount();
             
             // Calculate net price
             this.netPrice = getTotalPrice() - getDiscount();
+        }
+    }
+
+    private void calculateDiscount() {
+        this.discount = 0;
+        if(getBookAmount() == 2) {
+            this.discount = getTotalPrice() * 0.05;
+        }
+        if(getBookAmount() == 3) {
+            this.discount = getTotalPrice() * 0.1;
         }
     }
 
