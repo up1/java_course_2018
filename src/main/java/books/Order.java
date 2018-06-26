@@ -1,11 +1,13 @@
 package books;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Order {
 
-    private BookItem bookItem;
     private int bookAmount;
     private double totalPrice;
-    private int discount;
+    private double discount;
     private double netPrice;
 
     public int getBookAmount() {
@@ -24,22 +26,29 @@ public class Order {
         return this.netPrice;
     }
 
+    private List<BookItem> bookItem = new ArrayList<>();
     public void addItem(BookItem bookItem) {
-        this.bookItem = bookItem;
+        this.bookItem.add(bookItem);
     }
 
     public void process() {
-        if(this.bookItem != null) {
+//        if(this.bookItem != null && this.bookItem.size() > 0) {
+        if(!this.bookItem.isEmpty()) {
             // Book amount = size of order
-            this.bookAmount = 1;
+            this.bookAmount = this.bookItem.size();
             
             // Calculate price
 //            this.totalPrice = bookItem.getBook().getPrice();
             // Law of demeter :: https://en.wikipedia.org/wiki/Law_of_Demeter
-            this.totalPrice = bookItem.getTotalPrice();
+            for (BookItem book : bookItem) {
+                this.totalPrice += book.getTotalPrice();
+            }
             
             // Calculate discount
             this.discount = 0;
+            if(getBookAmount() == 2) {
+                this.discount = getTotalPrice() * 0.05;
+            }
             
             // Calculate net price
             this.netPrice = getTotalPrice() - getDiscount();
