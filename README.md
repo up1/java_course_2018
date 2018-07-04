@@ -29,6 +29,13 @@
 
 ## Day 4
 * [ ] Introduction to Java 8
+  * [ ] Lambda expression
+  * [ ] Functional Interface and Default method
+  * [ ] Java Stream API
+  * [ ] Date and Time API
+  * [ ] Type annotation
+  * [ ] Repeat expression
+  * [ ] Iterate data
 * [ ] SOLID
 
 ## Day 5
