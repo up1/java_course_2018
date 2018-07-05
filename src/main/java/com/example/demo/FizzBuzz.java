@@ -1,6 +1,8 @@
 package com.example.demo;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class FizzBuzz {
     
@@ -22,7 +24,7 @@ public class FizzBuzz {
 
     private String result;
     
-    public String say(int input) {
+    public String say2(int input) {
         int[] numbers = {15, 3, 5};
         String[] results = {"FizzBuzz", "Fizz", "Buzz"};
         
@@ -34,17 +36,21 @@ public class FizzBuzz {
         return String.valueOf(input);
     }
 
-    public String say1(int input) {
-        result = String.valueOf(input);
-        if (input == 15) {
-            result = "FizzBuzz";
-        } else if (หารสามลงตัว(input)) {
-            result = "Fizz";
-        } else if (หารห้าลงตัว(input)) {
-            result = "Buzz";
-        }
-        return result;
+    public String say(int input) {
+        // Register conditions
+        List<Condition> conditions = new ArrayList<>();
+        conditions.add(new FizzBuzzCondition());
+        conditions.add(new FizzCondition());
+        conditions.add(new BuzzCondition());
+        conditions.add(new KBTGCondition());
         
+        // Process
+        for (Condition condition : conditions) {
+            if(condition.check(input)) {
+                return condition.say();
+            }
+        }
+        return String.valueOf(input);
         
 //        return (input == 15) ? "FizzBuzz"
 //                : หารสามลงตัว(input) ? "Fizz" 

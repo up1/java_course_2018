@@ -49,10 +49,10 @@ public class FizzBuzzTest {
 	}
 	
 	@Test
-	public void say_7_when_input_7() {
+	public void say_KBTG_when_input_7() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		String actualResult = fizzBuzz.say(7);
-		assertEquals("7", actualResult);
+		assertEquals("KBTG", actualResult);
 	}
 	
 	@Test
