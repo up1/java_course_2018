@@ -6,7 +6,7 @@ public class BuzzCondition implements Condition {
         return input % 5 == 0;
     }
 
-    public String say() {
+    public String say(int input) {
         return "Buzz";
     }
 

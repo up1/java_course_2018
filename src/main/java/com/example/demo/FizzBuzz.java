@@ -43,14 +43,15 @@ public class FizzBuzz {
         conditions.add(new FizzCondition());
         conditions.add(new BuzzCondition());
         conditions.add(new KBTGCondition());
+        conditions.add(new DefaulCondition());
         
         // Process
         for (Condition condition : conditions) {
             if(condition.check(input)) {
-                return condition.say();
+                return condition.say(input);
             }
         }
-        return String.valueOf(input);
+        throw new RuntimeException("Condition not match");
         
 //        return (input == 15) ? "FizzBuzz"
 //                : หารสามลงตัว(input) ? "Fizz" 

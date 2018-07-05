@@ -1,15 +1,15 @@
 package com.example.demo;
 
-public class KBTGCondition implements Condition {
+public class DefaulCondition implements Condition {
 
     @Override
     public boolean check(int input) {
-        return input%7 ==0;
+        return true;
     }
 
     @Override
     public String say(int input) {
-        return "KBTG";
+        return String.valueOf(input);
     }
 
 }

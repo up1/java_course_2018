@@ -6,7 +6,7 @@ public class FizzCondition implements Condition {
         return input%3 == 0;
     }
 
-    public String say() {
+    public String say(int input) {
         return "Fizz";
     }
 

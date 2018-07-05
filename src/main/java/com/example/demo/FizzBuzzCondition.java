@@ -6,7 +6,7 @@ public class FizzBuzzCondition implements Condition {
         return input == 15;
     }
 
-    public String say() {
+    public String say(int input) {
         return "FizzBuzz";
     }
 
