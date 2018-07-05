@@ -45,3 +45,5 @@
 * [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [Refactoring: Improving the Design of Existing Code](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672)
 * [Head First Design Pattern](http://shop.oreilly.com/product/9780596007126.do)
+* [Agile Software Development, Principles, Patterns, and Practices](https://www.amazon.in/Software-Development-Principles-Patterns-Practices/dp/0135974445)
+* [ReactiveX](http://reactivex.io/)
