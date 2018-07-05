@@ -43,7 +43,7 @@ public class FizzBuzz {
         conditions.add(new FizzCondition());
         conditions.add(new BuzzCondition());
         conditions.add(new KBTGCondition());
-        conditions.add(new DefaulCondition());
+        conditions.add(new DefaultCondition());
         
         // Process
         for (Condition condition : conditions) {

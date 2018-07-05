@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class DefaulCondition implements Condition {
+public class DefaultCondition implements Condition {
 
     @Override
     public boolean check(int input) {
