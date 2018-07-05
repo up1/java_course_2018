@@ -3,6 +3,7 @@ package com.example.demo;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FizzBuzz {
     
@@ -46,12 +47,17 @@ public class FizzBuzz {
         conditions.add(new DefaultCondition());
         
         // Process
-        for (Condition condition : conditions) {
-            if(condition.check(input)) {
-                return condition.say(input);
-            }
-        }
-        throw new RuntimeException("Condition not match");
+//        for (Condition condition : conditions) {
+//            if(condition.check(input)) {
+//                return condition.say(input);
+//            }
+//        }
+        return conditions.parallelStream()
+                .filter(c -> c.check(input))
+                .map(c -> c.say(input))
+                .collect(Collectors.toList()).get(0);
+        
+//        throw new RuntimeException("Condition not match");
         
 //        return (input == 15) ? "FizzBuzz"
 //                : หารสามลงตัว(input) ? "Fizz" 
