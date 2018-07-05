@@ -37,5 +37,12 @@ public class AbbreviationTest {
         String result = p.of("United States of America");
         assertEquals("USA", result);
     }
+    
+    @Test
+    public void should_return_USA_with_lower_case() {
+        Abbreviation p = new Abbreviation();
+        String result = p.of("united states of america");
+        assertEquals("USA", result);
+    }
 
 }

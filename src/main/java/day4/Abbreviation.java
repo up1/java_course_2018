@@ -28,7 +28,7 @@ public class Abbreviation {
         for (String string : afterFilter) {
             result += string.charAt(0);
         }
-        return result;
+        return result.toUpperCase();
     }
 
 }
