@@ -14,11 +14,7 @@ public class MainSorting {
 
     private void start() {
         // Create data
-        List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee(1, "Somkiat", 200));
-        employees.add(new Employee(2, "Pui", 100));
-        employees.add(new Employee(3, "Abdul", 500));
-        employees.add(new Employee(4, "Up1", 150));
+        List<Employee> employees = initialData();
         employees.forEach(System.out::println);
         
         // Sorting with Comparator
@@ -27,6 +23,15 @@ public class MainSorting {
                       (int)(e2.getSalary() - e1.getSalary());
         Collections.sort(employees, withLambda);
         employees.forEach(System.out::println);
+    }
+
+    private List<Employee> initialData() {
+        List<Employee> employees = new ArrayList<>();
+        employees.add(new Employee(1, "Somkiat", 200));
+        employees.add(new Employee(2, "Pui", 100));
+        employees.add(new Employee(3, "Abdul", 500));
+        employees.add(new Employee(4, "Up1", 150));
+        return employees;
     }
 }
 
