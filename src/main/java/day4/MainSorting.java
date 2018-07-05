@@ -22,7 +22,10 @@ public class MainSorting {
         employees.forEach(System.out::println);
         
         // Sorting with Comparator
-        Collections.sort(employees, new SortingBySalaryWithDecending());
+        Comparator<Employee> withLambda = 
+                (Employee e1, Employee e2) -> 
+                      (int)(e2.getSalary() - e1.getSalary());
+        Collections.sort(employees, withLambda);
         employees.forEach(System.out::println);
     }
 }
