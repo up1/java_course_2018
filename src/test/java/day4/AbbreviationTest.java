@@ -44,5 +44,13 @@ public class AbbreviationTest {
         String result = p.of("united states of america");
         assertEquals("USA", result);
     }
+    
+    @Test
+    public void using_stream() {
+        Abbreviation p = new Abbreviation();
+        assertEquals("USA", p.ofStream("United States of America"));
+        assertEquals("USA", p.ofStream("united states of america"));
+    }
+    
 
 }
