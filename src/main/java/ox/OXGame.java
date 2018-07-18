@@ -2,7 +2,7 @@ package ox;
 
 public class OXGame {
     String[][] tables = new String[3][3];
-    
+
     public OXGame() {
         initialTables();
     }
@@ -14,11 +14,11 @@ public class OXGame {
             }
         }
     }
-    
+
     public String[][] getTables() {
         return tables;
     }
-    
+
     public void playWith(Player player, int i, int j) {
         tables[i][j] = player.getSymbol();
     }
@@ -36,9 +36,19 @@ public class OXGame {
     }
 
     public boolean isWinner() {
-        return true;
-    }
+        boolean result = true;
+        // Row 0
+        for (int column = 0; column < 3; column++) {
+            if ("".equals(valueAt(0, column))) {
+                result = false;
+                break;
+            }
+        }
+        // Row 1
 
-    
+        // Row 2
+
+        return result;
+    }
 
 }

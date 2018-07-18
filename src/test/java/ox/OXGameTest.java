@@ -68,6 +68,19 @@ public class OXGameTest {
         game.playWith(player2, 0, 2);
         assertTrue(game.isWinner());
     }
+    
+    @Test
+    public void เมื่อมีคนเล่นที่หนึ่งชนะ_ในแนวนอนแถวที่2() {
+        OXGame game = new OXGame();
+        Player player1 = new Player("X");
+        Player player2 = new Player("O");
+        game.playWith(player1, 1, 0);
+        game.playWith(player2, 0, 0);
+        game.playWith(player1, 1, 1);
+        game.playWith(player2, 0, 1);
+        game.playWith(player1, 1, 2);
+        assertTrue(game.isWinner());
+    }
 
     private String[][] generateEmptyTable() {
         String[][] tables = new String[3][3];
