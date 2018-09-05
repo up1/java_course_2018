@@ -15,16 +15,6 @@ public class Main {
 		
 	}
 
-	private void second() {
-		List<Dish> menus = getAllMenus();
-		List<String> lowCaloriesDishNames = menus.stream()
-			.filter(dish -> dish.getCalories() < 400)
-			.sorted(Comparator.comparing(Dish::getCalories))
-			.map(Dish::getName)
-			.collect(Collectors.toList());
-		lowCaloriesDishNames.forEach(System.out::println);
-	}
-
 	private void first() {
 		List<Dish> menus = getAllMenus();
 		// Filter low calories < 400
@@ -53,6 +43,17 @@ public class Main {
 		lowCaloriesDishNames.forEach(System.out::println);
 		
 	}
+	
+	private void second() {
+		List<Dish> menus = getAllMenus();
+		List<String> lowCaloriesDishNames = menus.stream()
+			.filter(dish -> dish.getCalories() < 400)
+			.sorted(Comparator.comparing(Dish::getCalories))
+			.map(Dish::getName)
+			.collect(Collectors.toList());
+		lowCaloriesDishNames.forEach(System.out::println);
+	}
+	
 	
 	private List<Dish> getAllMenus() {
 		List<Dish> menus = new ArrayList<>();
