@@ -28,10 +28,10 @@
 * [x] Introduction to Java 8
 
 ## Day 4
-* [ ] Introduction to Java 8
-  * [ ] Lambda expression
+* [x] Introduction to Java 8
+  * [x] Lambda expression
   * [ ] Functional Interface and Default method
-  * [ ] Java Stream API
+  * [x] Java Stream API
   * [ ] Date and Time API
   * [ ] Type annotation
   * [ ] Repeat expression
