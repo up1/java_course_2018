@@ -52,6 +52,7 @@
 * [Head First Design Pattern](http://shop.oreilly.com/product/9780596007126.do)
 * [Agile Software Development, Principles, Patterns, and Practices](https://www.amazon.in/Software-Development-Principles-Patterns-Practices/dp/0135974445)
 * [ReactiveX](http://reactivex.io/)
+* [RxJs Marbles](http://rxmarbles.com/)
 
 ### Practices
 * [Project Euler](https://projecteuler.net/)
