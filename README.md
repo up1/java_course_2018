@@ -39,10 +39,10 @@
 * [ ] SOLID
 
 ## Day 5
-* [ ] All about Unit Testing
-  * [ ] F.I.R.S.T
-  * [ ] A-A-A (Arrange-Act-Assert)
-  * [ ] Data-Driven Testing
+* [x] All about Unit Testing
+  * [x] F.I.R.S.T
+  * [x] A-A-A (Arrange-Act-Assert)
+  * [x] Data-Driven Testing
   * [ ] Performance Testing
 
 
