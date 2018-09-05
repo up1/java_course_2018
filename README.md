@@ -52,3 +52,9 @@
 * [Head First Design Pattern](http://shop.oreilly.com/product/9780596007126.do)
 * [Agile Software Development, Principles, Patterns, and Practices](https://www.amazon.in/Software-Development-Principles-Patterns-Practices/dp/0135974445)
 * [ReactiveX](http://reactivex.io/)
+
+### Practices
+* [Project Euler](https://projecteuler.net/)
+* [P-99: Ninety-Nine Prolog Problems](https://sites.google.com/site/prologsite/prolog-problems)
+* [Facebook Hacker Cup](https://www.facebook.com/hackercup/scoreboard/)
+* [Google Code Jam](https://code.google.com/codejam/)
