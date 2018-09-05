@@ -28,10 +28,10 @@
 * [x] Introduction to Java 8
 
 ## Day 4
-* [ ] Introduction to Java 8
-  * [ ] Lambda expression
+* [x] Introduction to Java 8
+  * [x] Lambda expression
   * [ ] Functional Interface and Default method
-  * [ ] Java Stream API
+  * [x] Java Stream API
   * [ ] Date and Time API
   * [ ] Type annotation
   * [ ] Repeat expression
@@ -52,3 +52,9 @@
 * [Head First Design Pattern](http://shop.oreilly.com/product/9780596007126.do)
 * [Agile Software Development, Principles, Patterns, and Practices](https://www.amazon.in/Software-Development-Principles-Patterns-Practices/dp/0135974445)
 * [ReactiveX](http://reactivex.io/)
+
+### Practices
+* [Project Euler](https://projecteuler.net/)
+* [P-99: Ninety-Nine Prolog Problems](https://sites.google.com/site/prologsite/prolog-problems)
+* [Facebook Hacker Cup](https://www.facebook.com/hackercup/scoreboard/)
+* [Google Code Jam](https://code.google.com/codejam/)
