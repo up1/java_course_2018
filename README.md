@@ -44,6 +44,7 @@
   * [x] A-A-A (Arrange-Act-Assert)
   * [x] Data-Driven Testing
   * [ ] Performance Testing
+* [x] Working with Spring Boot
 
 
 ### Books
