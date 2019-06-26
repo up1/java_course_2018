@@ -36,7 +36,7 @@
   * [ ] Type annotation
   * [ ] Repeat expression
   * [ ] Iterate data
-* [ ] SOLID
+* [x] SOLID
 
 ## Day 5
 * [x] All about Unit Testing
